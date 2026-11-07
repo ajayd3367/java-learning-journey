@@ -3,19 +3,18 @@ package com.ajay.learning;
 public class MethodDemo {
     public static void main(String[] args){
         MethodDemo demo = new MethodDemo();
-        demo.greet();
-        demo.calculate();
+        //demo.greet();
+        MethodDemo.greet();
+        demo.calculate(200, 300);
         demo.introduceSelf();
     }
-    public void greet(){
+    public static void greet(){
         System.out.println("Hello Dev!");
     }
 
-    public void calculate(){
-        int a,b;
-        a=100;b=200;
+    public void calculate(int a, int b){
         int sum=a+b;
-        System.out.println("The sum of 100 and 200 is "+sum);
+        System.out.println("The sum of "+a+"+"+b+" is:"+sum);
     }
 
     public void introduceSelf(){
